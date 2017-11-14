@@ -98,7 +98,7 @@ class SerialThread(Actor):
             print("need more input data")
             return
 
-        cmd_data = self._serialdata[0: payload_len + Global.HOSTAP_CMD_MINIMUM_SIZE +1 ]
+        cmd_data = self._serialdata[0: payload_len + Global.HOSTAP_CMD_MINIMUM_SIZE]
         Global.dump_data(cmd_data)
         #check fcs here
 

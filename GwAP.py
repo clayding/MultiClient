@@ -14,8 +14,8 @@ class Gw_AP():
         self.channel = channel
         self.password = password
         self.start_seqno = start_seqno
-        self.dev_list_file = dev_list_file.decode('utf8').encode('gbk') #get the dev List file, which store the dev list of this ap
-        self.data_dir = data_dir.decode('utf8').encode('gbk') #get the data dir, which will be used to store the regular/urgent data
+        self.dev_list_file = dev_list_file.decode('utf8') #get the dev List file, which store the dev list of this ap
+        self.data_dir = data_dir.decode('utf8') #get the data dir, which will be used to store the regular/urgent data
         # self.dev_list = { uuid:devdata, ...} //
         self.dev_list = {}
         # self.free_dev_addrs = [1 ...]
